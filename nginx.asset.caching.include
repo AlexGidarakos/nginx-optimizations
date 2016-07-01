@@ -1,0 +1,5 @@
+# Browser caching of static assets for 90 days
+location ~* \.(css|eot|gif|ico|jp?g|js|otf|png|svg|ttf|woff|woff2)$ {
+    expires 90d;
+    add_header Cache-Control "public";
+}
