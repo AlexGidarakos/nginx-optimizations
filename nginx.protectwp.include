@@ -1,0 +1,4 @@
+location /wp-login.php {
+    auth_basic "Authentication";
+    auth_basic_user_file $realpath_root/../.htpasswd;
+}
